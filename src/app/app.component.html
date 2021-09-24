@@ -1,0 +1,29 @@
+<header>
+<b> Rosângela da Silva Santana Borges</b>
+<br>
+<b>RA:0050831921038</b>
+
+</header>
+
+
+
+<h1>Dados do Bitcoin </h1>
+
+
+
+<table border="2">
+<tr>
+  <th>Data/Hora</th>
+  <th>USD</th>
+  <th>BRL</th>
+</tr>
+<tr *ngFor="let rate of this.bitcoin.bitcoinRates">
+  <td>{{ rate.time.updated }}</td>
+  <td>
+    {{ rate.bpi.USD.rate_float }}
+  </td>
+  <td>
+    {{ rate.bpi.BRL.rate_float }}
+  </td>
+</tr>
+</table>
